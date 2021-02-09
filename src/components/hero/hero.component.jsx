@@ -12,7 +12,7 @@ const headingText = {
 const Hero = ({ isSith, toggleTheme }) => {
   return (
     <>
-      <Nav />
+      <Nav isSith={isSith} />
       <section className={`hero ${isSith ? 'sith-bg' : 'jedi-bg'}`}>
         <div className="title-group">
           <h1 className="landing-title">

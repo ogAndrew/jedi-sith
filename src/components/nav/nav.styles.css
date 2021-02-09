@@ -8,8 +8,34 @@ nav {
   margin: 40px;
 }
 
+.nav-toggle {
+  font-size: 1.5rem;
+  color: var(--clr-font1);
+  background: transparent;
+  border-color: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.nav-toggle:hover {
+  transform: rotate(180deg);
+}
+
+.links-container {
+  visibility: hidden;
+}
+
+.show-container {
+  visibility: visible;
+  width: 100vw;
+  height: 100vh;
+}
+
 ul {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul li a {

@@ -1,3 +1,26 @@
+export const links = [
+  {
+    id: 1,
+    url: '/theforce',
+    text: 'the force',
+  },
+  {
+    id: 2,
+    url: '/jedi',
+    text: 'jedi',
+  },
+  {
+    id: 3,
+    url: '/sith',
+    text: 'sith',
+  },
+  {
+    id: 4,
+    url: '/destiny',
+    text: 'choose your destiny',
+  },
+];
+
 const sithData = [
   {
     id: 1,
