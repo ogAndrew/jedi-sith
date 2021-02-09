@@ -1,0 +1,25 @@
+/* Navigation */
+nav {
+  z-index: 10;
+  position: fixed;
+  margin: 20px;
+  letter-spacing: 3px;
+  width: 100%;
+  margin: 40px;
+}
+
+ul {
+  display: flex;
+}
+
+nav ul li a {
+  color: var(--clr-font1);
+  margin: 16px;
+  transition: var(--transition);
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--clr-font3);
+  border-bottom: 2px solid;
+}

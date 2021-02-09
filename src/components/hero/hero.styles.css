@@ -1,0 +1,25 @@
+/* Hero Section */
+.hero {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.jedi-bg {
+  background-image: url('../../assets/images/mobile-header-jedi.png');
+}
+
+.sith-bg {
+  background-image: url('../../assets/images/mobile-header-sith.png');
+}
+
+.hero .title-group {
+  margin: 20px;
+}
+
+.hero .landing-title {
+  color: var(--clr-font1);
+}

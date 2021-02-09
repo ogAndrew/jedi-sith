@@ -1,0 +1,63 @@
+/* Dark Side Toggle */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  margin: 0 0 10px 20px;
+}
+
+.toggle-text {
+  color: var(--clr-font1);
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background: var(--clr-toggle-bg2);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider::before {
+  background: var(--clr-toggle-bg1);
+  bottom: 4px;
+  content: '';
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background: var(--clr-toggle-bg2)
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+  background-color: var(--clr-toggle-bg1)
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}
