@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
-import { FaBars } from 'react-icons/fa';
+import React from 'react';
 import { links } from '../../data';
 
 import './nav.styles.css';
 
 function Nav({ isSith }) {
-  const [showLinks, setShowLinks] = useState(false);
-
   let filteredLinks = links.filter((link) => {
     if (isSith) {
       return link.text !== 'jedi';
@@ -15,32 +12,29 @@ function Nav({ isSith }) {
     }
   });
 
-  const toggleLinks = () => {
-    setShowLinks((prevState) => !prevState);
-  };
-
   return (
-    <nav class="nav">
-      <button className="nav-toggle" onClick={toggleLinks}>
-        <FaBars />
-      </button>
-      <div
-        className={`${
-          showLinks ? 'links-container show-container' : 'links-container'
-        }`}
-      >
-        <ul>
-          {filteredLinks.map((link) => {
-            let { id, url, text } = link;
-            return (
-              <li key={id}>
-                <a href={url}>{text.toUpperCase()}</a>
-              </li>
-            );
-          })}
-        </ul>
+    <div className="menu-wrap">
+      <input type="checkbox" className="toggler" />
+      <div className="hamburger">
+        <div></div>
       </div>
-    </nav>
+      <div className="menu">
+        <div className={isSith ? 'sith' : 'jedi'}>
+          <div>
+            <ul>
+              {filteredLinks.map((link) => {
+                let { id, url, text } = link;
+                return (
+                  <li key={id}>
+                    <a href={url}>{text}</a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 

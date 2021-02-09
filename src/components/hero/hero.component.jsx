@@ -13,14 +13,18 @@ const Hero = ({ isSith, toggleTheme }) => {
   return (
     <>
       <Nav isSith={isSith} />
-      <section className={`hero ${isSith ? 'sith-bg' : 'jedi-bg'}`}>
-        <div className="title-group">
+
+      <header
+        id="showcase"
+        className={`hero ${isSith ? 'sith-bg' : 'jedi-bg'}`}
+      >
+        <div className="container showcase-container">
           <h1 className="landing-title">
             {isSith ? headingText['sith-title'] : headingText['jedi-title']}
           </h1>
+          <Slider isSith={isSith} toggleTheme={toggleTheme} />
         </div>
-        <Slider isSith={isSith} toggleTheme={toggleTheme} />
-      </section>
+      </header>
     </>
   );
 };

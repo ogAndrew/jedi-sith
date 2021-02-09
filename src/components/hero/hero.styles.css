@@ -1,11 +1,17 @@
-/* Hero Section */
-.hero {
+
+
+.container {
+  max-width: 960px;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+#showcase {
+  color: #fff;
+  height: 100vh;
+  position: relative;
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 .jedi-bg {
@@ -16,10 +22,31 @@
   background-image: url('../../assets/images/mobile-header-sith.png');
 }
 
+#showcase .showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+
+/* 
+.hero {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+
+
 .hero .title-group {
   margin: 20px;
 }
 
 .hero .landing-title {
   color: var(--clr-font1);
-}
+} */

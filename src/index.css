@@ -29,6 +29,9 @@ Global Styles
   --clr-btn-hover1: #329735;
   --clr-btn-hover2: #4878c2;
 
+  --overlay-color-jedi: rgba(244, 244, 244, 0.95);
+  --overlay-color-sith: rgba(161, 15, 5, 0.95);
+
   /* text sizes */
   --smText: 0.64rem;
   --mdText: 0.8rem;
