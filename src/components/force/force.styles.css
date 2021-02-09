@@ -1,0 +1,44 @@
+.container {
+  align-items: center;
+  padding: 2rem 3rem;
+}
+
+.dark {
+  background: var(--clr-bcg);
+  color: var(--clr-font1);
+}
+
+.light {
+  background: var(--clr-bcg);
+  color: var(--clr-font2);
+}
+
+.light-title,
+.dark-title,
+.dark-author,
+.light-author {
+  text-transform: uppercase;
+  margin: 1rem;
+}
+
+.dark-quote {
+  color: var(--clr-font2);
+}
+
+.light-quote {
+  color: var(--clr-font3);
+}
+
+.light-quote,
+.dark-quote {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.dark-bold {
+  color: var(--clr-font1);
+}
+
+.light-bold {
+  color: var(--clr-font4);
+}

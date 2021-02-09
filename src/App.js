@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-import Nav from './components/nav/nav.component';
 import Hero from './components/hero/hero.component';
 import Force from './components/force/force.component';
 import WarriorList from './components/warrior-list/warrior-list.component';
@@ -29,6 +28,7 @@ function App() {
   return (
     <main>
       <Hero isSith={isSith} toggleTheme={toggleTheme} />
+      <Force isSith={isSith} />
     </main>
   );
 }
