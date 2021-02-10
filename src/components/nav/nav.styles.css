@@ -74,6 +74,7 @@
 /* Toggler Animation */
 .menu-wrap .toggler:checked + .hamburger > div {
   transform: rotate(135deg);
+  background-color: black;
 }
 
 /* Turns Lines Into X */
@@ -81,6 +82,7 @@
 .menu-wrap .toggler:checked + .hamburger > div:after {
   top: 0;
   transform: rotate(90deg);
+  background-color: black;
 }
 
 /* Rotate On Hover When Checked */
@@ -117,7 +119,6 @@
 }
 
 .menu-wrap .menu > div {
-  /* background: var(--overlay-color-jedi); */
   border-radius: 50%;
   width: 250vw;
   height: 250vw;
@@ -147,7 +148,6 @@
 
 .menu-wrap .menu > div > div > ul > li {
   list-style: none;
-  color: #fff;
   font-size: 1.5rem;
   padding: 1rem;
 }

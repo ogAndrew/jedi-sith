@@ -18,7 +18,7 @@ function Slider({ isSith, toggleTheme }) {
     <div className="theme-switch-wrapper">
       <span className="toggle-text">{isSith ? 'Dark Side' : 'Light Side'}</span>
       <label className="theme-switch">
-        <input type="checkbox" name="toggle-top" onChange={handleChange} />
+        <input type="checkbox" checked={isSith} name="toggle-top" onChange={handleChange} />
         <div className="slider round"></div>
       </label>
     </div>

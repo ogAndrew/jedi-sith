@@ -70,13 +70,16 @@ Global Styles
 
 .sith-mode {
   --clr-bcg: #000000;
+  --clr-card-bg: #2d0001;
   --clr-font1: #ffffff;
+  --clr-card-font: var(--clr-font1);
   --clr-font2: #5b5b5b;
+  --clr-card-line: #5b5b5b;
   --clr-font3: #a10f05;
   --clr-font4: #2d0001;
 
-  --clr-toggle-bg1: #4b4b4b;
-  --clr-toggle-bg2: #a10f05;
+  --clr-toggle-bg: #4b4b4b;
+  --clr-toggle-dot: #a10f05;
   --clr-toggle-text1: #a1a1a1;
   --clr-toggle-text2: #ffffff;
 
@@ -86,13 +89,16 @@ Global Styles
 
 .jedi-mode {
   --clr-bcg: #f4f4f4f4;
+  --clr-card-bg: #ffffff;
   --clr-font1: #ffffff;
   --clr-font2: #000000;
+  --clr-card-font: var(--clr-font2);
   --clr-font3: #c4c4c4c4;
+  --clr-card-line: #c4c4c4;
   --clr-font4: #74ca76;
 
-  --clr-toggle-bg1: var(--clr-font4);
-  --clr-toggle-bg2: #4b4b4b;
+  --clr-toggle-dot: var(--clr-font4);
+  --clr-toggle-bg: #4b4b4b;
   --clr-toggle-text1: var(--clr-font1);
   --clr-toggle-text2: #a1a1a1;
 
@@ -119,6 +125,10 @@ body {
   padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: clamp(100%, 1rem + 0.25vw, 2rem);
+}
+
+main {
+  background-color: var(--clr-bcg);
 }
 
 h1,

@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { links } from '../../data';
 
 import './nav.styles.css';
 
 function Nav({ isSith }) {
+  let [checked, setChecked] = useState(false);
+
   let filteredLinks = links.filter((link) => {
     if (isSith) {
       return link.text !== 'jedi';
@@ -14,7 +16,12 @@ function Nav({ isSith }) {
 
   return (
     <div className="menu-wrap">
-      <input type="checkbox" className="toggler" />
+      <input
+        type="checkbox"
+        checked={checked}
+        onChange={() => setChecked((state) => !state)}
+        className="toggler"
+      />
       <div className="hamburger">
         <div></div>
       </div>
@@ -26,7 +33,9 @@ function Nav({ isSith }) {
                 let { id, url, text } = link;
                 return (
                   <li key={id}>
-                    <a href={url}>{text}</a>
+                    <a href={url} onClick={() => setChecked(false)}>
+                      {text}
+                    </a>
                   </li>
                 );
               })}

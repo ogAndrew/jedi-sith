@@ -5,8 +5,6 @@ import Force from './components/force/force.component';
 import WarriorList from './components/warrior-list/warrior-list.component';
 import Footer from './components/footer/footer.component';
 
-import data from './data';
-
 function App() {
   const [theme, setTheme] = useState('jedi-mode');
   const [isSith, setIsSith] = useState(false);
@@ -29,6 +27,8 @@ function App() {
     <main>
       <Hero isSith={isSith} toggleTheme={toggleTheme} />
       <Force isSith={isSith} />
+      <WarriorList isSith={isSith} />
+      <Footer isSith={isSith} toggleTheme={toggleTheme} />
     </main>
   );
 }

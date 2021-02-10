@@ -1,0 +1,18 @@
+.footer {
+  background: url('../../assets/images/mobile-footer.png') no-repeat center
+    center/cover;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-text {
+  color: var(--clr-font3);
+  font-size: 2rem;
+  margin: 6rem 2.5rem 1.4rem 2.5rem;
+}
+
+.choose-light {
+  color: var(--clr-font1);
+}

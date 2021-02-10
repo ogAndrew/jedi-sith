@@ -13,7 +13,7 @@ const quotes = {
 };
 
 const Force = ({ isSith }) => (
-  <section className={`${isSith ? 'dark' : 'light'} container`}>
+  <section id="force" className={`${isSith ? 'dark' : 'light'} container`}>
     {isSith ? (
       <>
         <p className="dark-title">The Dark Side</p>

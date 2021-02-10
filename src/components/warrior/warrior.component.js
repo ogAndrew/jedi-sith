@@ -1,24 +1,27 @@
 import React from 'react';
+import './warrior.styles.css';
 
-function Warrior() {
+function Warrior({ isSith, warrior }) {
+  const { id, name, planet, image, ship, url } = warrior;
   return (
     <div className="warrior-card">
       <div className="warrior-info">
-        <h2 className="warrior-name">Master Yoda</h2>
-        <a href="https://starwars.fandom.com/wiki/Yoda" class="btn-bio">
-          READ BIO
+        <h2 className="warrior-name">{name}</h2>
+        <a href={url} class={`btn ${isSith ? 'sith' : 'jedi'}`}>
+          Read Bio
         </a>
+        <div className="line"></div>
         <div className="warrior-info-group">
           <p className="warrior-subtitle">Home Planet</p>
-          <p>Daobo</p>
+          <p>{planet}</p>
         </div>
         <div className="warrior-info-group">
           <p className="warrior-subtitle">Starship</p>
-          <p>Jedi Starfighter</p>
+          <p>{ship}</p>
         </div>
       </div>
       <div className="warrior-img-container">
-        <img src="../assets/images/light-yoda.png" alt="Master Yoda" />
+        <img src={image} alt={name} />
       </div>
     </div>
   );

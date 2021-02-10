@@ -23,7 +23,7 @@
 }
 
 .slider {
-  background: var(--clr-toggle-bg2);
+  background: var(--clr-toggle-bg);
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -34,7 +34,7 @@
 }
 
 .slider::before {
-  background: var(--clr-toggle-bg1);
+  background: var(--clr-toggle-dot);
   bottom: 4px;
   content: '';
   height: 26px;
@@ -45,12 +45,12 @@
 }
 
 input:checked + .slider {
-  background: var(--clr-toggle-bg2)
+  background: var(--clr-toggle-bg);
 }
 
 input:checked + .slider::before {
   transform: translateX(26px);
-  background-color: var(--clr-toggle-bg1)
+  background-color: var(--clr-toggle-dot);
 }
 
 .slider.round {
