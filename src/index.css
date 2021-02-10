@@ -13,21 +13,6 @@ Global Styles
   --gap: 1rem;
 
   /* Colors */
-  --clr-bcg: #f4f4f4f4;
-  --clr-font1: #ffffff;
-  --clr-font2: #000000;
-  --clr-font3: #c4c4c4c4;
-  --clr-font4: #74ca76;
-
-  --clr-toggle-bg1: var(--clr-font4);
-  --clr-toggle-bg2: #4b4b4b;
-  --clr-toggle-text1: var(--clr-font1);
-  --clr-toggle-text2: #a1a1a1;
-
-  --clr-btn-bg1: var(--clr-font4);
-  --clr-btn-bg2: #2b4882;
-  --clr-btn-hover1: #329735;
-  --clr-btn-hover2: #4878c2;
 
   --overlay-color-jedi: rgba(244, 244, 244, 0.95);
   --overlay-color-sith: rgba(161, 15, 5, 0.95);
@@ -180,5 +165,6 @@ section {
 
 img {
   max-width: 100%;
+  max-height: 100%;
   display: block;
 }

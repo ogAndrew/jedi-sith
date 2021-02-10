@@ -9,8 +9,7 @@
 }
 
 .warrior-img-container {
-  margin: 0 auto;
-  z-index: 1;
+  margin: 0;
 }
 
 .warrior-name {
@@ -26,7 +25,6 @@
   margin: 1rem;
   color: var(--clr-font1);
   background-color: var(--clr-btn-bg1);
-  /* text-transform: uppercase; */
   font-size: 1rem;
   display: inline-flex;
   align-items: center;
@@ -44,4 +42,37 @@
 
 .warrior-subtitle {
   font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  .warrior-card {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 90vw;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .warrior-card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .warrior-card:nth-child(even) .warrior-info {
+    margin-right: 6.5rem;
+  }
+
+  #adjust {
+    margin-right: 3rem;
+  }
+
+  .warrior-img-container {
+    max-width: 50%;
+  }
+
+  img {
+    height: 350px;
+  }
+
+
+
 }

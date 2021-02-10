@@ -1,6 +1,7 @@
 .container {
   align-items: center;
   padding: 2rem 3rem;
+  margin: auto;
 }
 
 .dark {

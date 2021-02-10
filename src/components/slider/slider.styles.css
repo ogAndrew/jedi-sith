@@ -60,3 +60,24 @@ input:checked + .slider::before {
 .slider.round::before {
   border-radius: 50%;
 }
+
+@media only screen and (min-width: 768px) {
+  .toggle-text {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  .theme-switch {
+    width: 120px;
+    height: 45px;
+  }
+
+  .slider::before {
+    height: 40px;
+    width: 40px;
+  }
+
+  input:checked + .slider::before {
+    transform: translateX(70px);
+  }
+}

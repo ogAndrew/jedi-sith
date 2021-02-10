@@ -7,17 +7,9 @@ import './warrior-list.styles.css';
 const WarriorList = ({ isSith }) => {
   let listOfWarriors;
   if (isSith) {
-    listOfWarriors = warriors.filter((warrior) => {
-      if (warrior.id < 5) {
-        return warrior;
-      }
-    });
+    listOfWarriors = warriors.filter((warrior) => warrior.id < 5);
   } else {
-    listOfWarriors = warriors.filter((warrior) => {
-      if (warrior.id > 4) {
-        return warrior;
-      }
-    });
+    listOfWarriors = warriors.filter((warrior) => warrior.id > 4);
   }
 
   return (

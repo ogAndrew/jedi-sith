@@ -16,3 +16,18 @@
 .choose-light {
   color: var(--clr-font1);
 }
+
+@media screen and (min-width: 768px) {
+  .footer {
+    background-image: url('../../assets/images/footer-lg.png');
+    justify-content: flex-end;
+    padding-bottom: 3rem;
+  }
+  .footer-text {
+    font-size: 3rem;
+  }
+
+  .theme-switch-wrapper {
+    margin-bottom: 2rem;
+  }
+}
