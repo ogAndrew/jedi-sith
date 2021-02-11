@@ -4,7 +4,7 @@
   background-color: var(--clr-card-bg);
   color: var(--clr-card-font);
   margin-top: 1.5rem;
-  box-shadow: --var(--mdShadow);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
 
@@ -72,7 +72,4 @@
   img {
     height: 350px;
   }
-
-
-
 }

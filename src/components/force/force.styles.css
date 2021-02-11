@@ -22,6 +22,11 @@
   margin: 1rem;
 }
 
+.light-title,
+.dark-title {
+  margin-top: 3rem;
+}
+
 .dark-quote {
   color: var(--clr-font2);
 }
@@ -34,6 +39,7 @@
 .dark-quote {
   font-size: 2rem;
   margin: 1rem 0;
+  text-align: center;
 }
 
 .dark-bold {

@@ -44,25 +44,4 @@
   .landing-title {
     font-size: 6rem;
   }
-
 }
-
-/* 
-.hero {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-
-
-.hero .title-group {
-  margin: 20px;
-}
-
-.hero .landing-title {
-  color: var(--clr-font1);
-} */
